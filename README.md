@@ -45,16 +45,20 @@ Outputs: Console output of per fold test accuracy, average accuracy, and standar
 
 **1. Clone the Repository:**
 Access the project repository by cloning it to your local system using the command git clone Prashanth257/GCN, and then navigate into the project directory using cd GCN.
+
 **2. Install Dependencies:**
 Use Python 3.9 or later and install the required packages using:
 pip install -r requirements.txt
 Example requirements.txt includes:
 numpy==1.23.5, pandas==1.5.3, torch==2.0.1, torch-geometric==2.3.1, scikit-learn==1.2.2, mediapipe==0.10.7, opencv-python==4.8.0, matplotlib==3.7.1, seaborn==0.12.2, tabulate==0.9.0, openpyxl==3.1.2, tqdm==4.65.0
+
 **3. Download Dataset:**
 Download the dataset from Kaggle and place the video files in a local directory (e.g., ./videos/). Ensure the folder structure matches the paths used in the code.
+
 **4. Update File Paths:**
 Modify dataset paths in the scripts or notebooks by setting:
 VIDEO_DIR = "./videos/"
+
 **5. Run the Pipeline:**
 •	Execute each module sequentially:
 •	Kinematic Analysis: python GitHub_Angular.py
@@ -63,6 +67,7 @@ VIDEO_DIR = "./videos/"
 •	Learning Rate Ablation: python Ablation_Study.py
 •	Cross-Validation: python 5&10_Fold_Cross_Validation.py
 •	Each step generates corresponding outputs such as trained models, evaluation metrics, and performance plots.
+
 **6. Verify Outputs:**
 •	Model files (.pt) in the working directory
 •	Excel files containing performance metrics
