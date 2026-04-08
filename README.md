@@ -4,7 +4,7 @@ A Novel Graph Convolution Network-based framework for classification of performa
 
 **Description**
 
-This study presents a deep learning-based framework for classifying squat exercise quality from monocular video. The approach combines pose estimation, automated labeling, and spatial–temporal modeling to enable robust assessment of human movement without specialized hardware. Human skeletal keypoints are extracted using a pose estimation framework, with Sports2D employed to enhance 2D joint tracking and representation. A symmetry index generates frame-wise labels, highlighting deviations that indicate improper form or potential injury risk. Spatial–temporal dependencies are captured using graph convolutional networks: a baseline ST-GCN models joint relationships over time, while CTR-GCN further refines representations through adaptive topology learning. Together, these components allow accurate, real-world classification of squat performance.
+This study presents a deep learning-based framework for classifying squat exercise quality from monocular video. The approach combines pose estimation, automated labeling, and spatial-temporal modeling to enable robust assessment of human movement without specialized hardware. Human skeletal keypoints are extracted using a pose estimation framework, with Sports2D and Mediapipe employed to enhance 2D joint tracking and representation. A symmetry index generates frame-wise labels, highlighting deviations that indicate improper form or potential injury risk. Spatial-temporal dependencies are captured using graph convolutional networks: a baseline ST-GCN models joint relationships over time, while CTR-GCN further refines representations through adaptive topology learning. Together, these components allow accurate, real-world classification of squat performance.
 
 **Dataset Information:**
 
@@ -12,13 +12,13 @@ The Workout/Exercises Video (https://www.kaggle.com/datasets/hasyimabdillah/work
 
 **Code Information:**
 
-This README ensures reproducibility and transparency per the specified format. Reproducibility Algorithms and Code – the pipeline includes five main notebooks for squat exercise quality classification, leveraging MediaPipe pose estimation, symmetry index auto labelling, and two graph convolutional network architectures (ST GCN and CTR GCN):
+This README ensures reproducibility and transparency per the specified format. Reproducibility Algorithms and Code - the pipeline includes five main notebooks for squat exercise quality classification, leveraging pose estimation, symmetry index auto labelling, and two graph convolutional network architectures (ST GCN and CTR GCN):
 
 **Module	Purpose	Description**
 
 **Module:** Feature Extraction (GitHub_Angular.ipynb) **Purpose:** Extracts kinematic statistics (angular velocity, acceleration, jerk) from joint angle data.
 	**Description:** Computes kinematic statistics such as velocity, acceleration, and jerk from joint angle data to capture motion dynamics.
-**Module:** ST-GCN Model (GitHub_ST_GCN.ipynb)	**Purpose:** Classifies squat quality (Safe vs. Risk) using a baseline Spatial Temporal Graph Convolutional Network.
+**Module:** ST-GCN Model (GitHub_ST_GCN.ipynb)	**Purpose:** Classifies squat quality (Safe vs Risk) using a baseline Spatial Temporal Graph Convolutional Network.
 	**Description:** Implements a baseline Spatial-Temporal Graph Convolutional Network using a fixed skeleton adjacency matrix.
 **Module:** CTR-GCN Model (GitHub_CTR_GCN.ipynb) **Purpose:**	Enhances squat classification using Channel wise Topology Refinement Graph Convolutional Network (CTR GCN) with learnable channel specific adjacency matrices.
 	**Description:** Extends the baseline with channel-wise topology refinement for adaptive graph structure learning.
