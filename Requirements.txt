@@ -1,4 +1,5 @@
-System Requirements
+**System Requirements**
+
 OS: Windows 11 (64-bit)
 CPU: Intel Core i5-1035G1
 RAM: 8 GB
