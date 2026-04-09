@@ -14,7 +14,6 @@ The Workout/Exercises Video (https://www.kaggle.com/datasets/hasyimabdillah/work
 
 This README ensures reproducibility and transparency per the specified format. Reproducibility Algorithms and Code - the pipeline includes five main notebooks for squat exercise quality classification, leveraging pose estimation, symmetry index auto labelling, and two graph convolutional network architectures (ST GCN and CTR GCN):
 
-**Module	Purpose	Description**
 
 **Module:** Feature Extraction (GitHub_Angular.ipynb) **Purpose:** Extracts kinematic statistics (angular velocity, acceleration, jerk) from joint angle data.
 	**Description:** Computes kinematic statistics such as velocity, acceleration, and jerk from joint angle data to capture motion dynamics.
