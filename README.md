@@ -15,23 +15,34 @@ Two publicly available datasets were used in this study for exercise and posture
 This README ensures reproducibility and transparency per the specified format. Reproducibility Algorithms and Code - the pipeline includes five main notebooks for squat exercise quality classification, leveraging pose estimation, symmetry index auto labelling, and two graph convolutional network architectures (ST GCN and CTR GCN):
 
 
-**Module:** Main Model (main.ipynb) **Purpose:** Performs skeleton-based feature extraction and trains ST-GCN and CTR-GCN models for squat posture classification.
-	**Description:** Processes squat videos using MediaPipe Pose to extract 3D skeletal joint coordinates. The extracted skeletons are normalized and converted into graph-based representations with position, velocity, acceleration, and jerk features (12 input channels). The notebook automatically labels samples using the Symmetry Index (SI) threshold, trains both Spatial-Temporal Graph Convolutional Network (ST-GCN) and Channel-wise Topology Refinement Graph Convolutional Network (CTR-GCN), evaluates their performance, and generates classification metrics, confusion matrices, and training history.
-**Module:** Ablation Study (Ablationstudy.ipynb) **Purpose:** Evaluates the contribution of different model configurations and training settings.
-	**Description:** Performs an Ablation study by modifying selected model components and hyperparameters to investigate their influence on squat classification performance. Experimental results are summarized to compare different configurations and identify the contribution of each component.
-**Module:** Cross-Validation (crossvalidation.ipynb) **Purpose:** Evaluates the robustness and generalization capability of the proposed graph convolutional models.
-	**Description:** Implements k-fold cross-validation to assess the consistency and reliability of the ST-GCN and CTR-GCN models across multiple training and testing splits. Performance metrics from each fold are summarized to evaluate model stability.
+**Module:** Main Model (main.ipynb) 
+
+**Purpose:** Performs skeleton-based feature extraction and trains ST-GCN and CTR-GCN models for squat posture classification.
+
+**Description:** Processes squat videos using MediaPipe Pose to extract 3D skeletal joint coordinates. The extracted skeletons are normalized and converted into graph-based representations with position, velocity, acceleration, and jerk features (12 input channels). The notebook automatically labels samples using the Symmetry Index (SI) threshold, trains both Spatial-Temporal Graph Convolutional Network (ST-GCN) and Channel-wise Topology Refinement Graph Convolutional Network (CTR-GCN), evaluates their performance, and generates classification metrics, confusion matrices, and training history.
+
+**Module:** Ablation Study (Ablationstudy.ipynb) 
+
+**Purpose:** Evaluates the contribution of different model configurations and training settings.
+
+**Description:** Performs an Ablation study by modifying selected model components and hyperparameters to investigate their influence on squat classification performance. Experimental results are summarized to compare different configurations and identify the contribution of each component.
+
+**Module:** Cross-Validation (crossvalidation.ipynb) 
+
+**Purpose:** Evaluates the robustness and generalization capability of the proposed graph convolutional models.
+	
+**Description:** Implements k-fold cross-validation to assess the consistency and reliability of the ST-GCN and CTR-GCN models across multiple training and testing splits. Performance metrics from each fold are summarized to evaluate model stability.
 
 	
 **Output:**
 
-1.	Angular.ipynb (Kinematic Analysis):
+**1.	Angular.ipynb (Kinematic Analysis):**
 Outputs: Subject-wise Excel analysis files, Time series of joint angle, velocity, acceleration, and jerk, Angle statistics (maximum, minimum, ROM, mean, median, standard deviation, and mode), Derivative statistics (velocity, acceleration, and jerk),	Consolidated summary workbook (All_Subjects_Summary.xlsx).
-2.	main.ipynb (ST-GCN and CTR-GCN Model):
+**2.	main.ipynb (ST-GCN and CTR-GCN Model):**
 Outputs: Cached extracted skeleton features (.pt), Trained ST-GCN and CTR-GCN models (if model saving is enabled), Classification reports,	Training history (training_history.csv), Results summary (results_summary.csv),	Confusion matrices,	Accuracy plots (Comparison_Accuracy.png), Confusion matrix plots (Comparison_Confusion.png),	Classification report text file (classification_reports.txt).
-3.	Ablationstudy.ipynb (Ablation study):
+**3.	Ablationstudy.ipynb (Ablation study):**
 Outputs: Performance comparison of different model configurations, Experimental summary and evaluation metrics.
-4.	crossvalidation.ipynb (Cross-validation):
+**4.	Cross Validation.ipynb (Cross-validation):**
 Outputs: •	Cross-validation accuracy and F1-score for each fold,	Average performance metrics,	Fold-wise evaluation summaries,	Performance comparison across folds.
 
 
@@ -50,8 +61,12 @@ numpy==1.23.5, pandas==1.5.3, torch==2.0.1, torch-geometric==2.3.1, scikit-learn
 Download the dataset from Kaggle and Mendeley, place the video files in a local directory (e.g., ./videos/). Ensure the folder structure matches the paths used in the code.
 
 **4. Update File Paths:**
-Modify dataset paths in the scripts or notebooks by setting:
+Modify dataset paths in the  main.ipynb scripts or notebooks by setting:
 VIDEO_DIR = "./videos/"
+For angular.ipynb:
+input_folder = "./Excel/"
+output_folder = "./Output/"
+
 
 **5. Run the Pipeline:**
 •	Execute each module sequentially:
