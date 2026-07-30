@@ -1,0 +1,7 @@
+config,model,channels,augmentation,test_accuracy,test_f1
+pos_only,CTR-GCN,pos,False,0.878021978021978,0.8547269230877229
+pos_only,ST-GCN,pos,False,0.878021978021978,0.8561350775791156
+pos_vel,CTR-GCN,pos+vel,False,0.9439560439560439,0.9447981537533776
+pos_vel,ST-GCN,pos+vel,False,0.878021978021978,0.8594231184426055
+pos_vel_acc,CTR-GCN,pos+vel+acc,False,0.9120879120879121,0.9026104170765296
+pos_vel_acc,ST-GCN,pos+vel+acc,False,0.9010989010989011,0.9026928260418827

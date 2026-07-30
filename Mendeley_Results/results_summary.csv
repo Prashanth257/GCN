@@ -1,0 +1,21 @@
+Model,Test Accuracy,Test F1,Classification Report,Confusion Matrix
+CTR-GCN,0.9483516483516483,0.9484143487419389,"              precision    recall  f1-score   support
+
+        Good       0.97      0.97      0.97       749
+         Bad       0.85      0.86      0.85       161
+
+    accuracy                           0.95       910
+   macro avg       0.91      0.91      0.91       910
+weighted avg       0.95      0.95      0.95       910
+","[[725,  24],
+ [ 23, 138]]"
+ST-GCN,0.8725274725274725,0.8527619743721438,"              precision    recall  f1-score   support
+
+        Good       0.88      0.98      0.93       749
+         Bad       0.80      0.37      0.51       161
+
+    accuracy                           0.87       910
+   macro avg       0.84      0.68      0.72       910
+weighted avg       0.87      0.87      0.85       910
+","[[734,  15],
+ [101,  60]]"
