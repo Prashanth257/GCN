@@ -38,10 +38,13 @@ This README ensures reproducibility and transparency per the specified format. R
 
 **1.	Angular.ipynb (Kinematic Analysis):**
 Outputs: Subject-wise Excel analysis files, Time series of joint angle, velocity, acceleration, and jerk, Angle statistics (maximum, minimum, ROM, mean, median, standard deviation, and mode), Derivative statistics (velocity, acceleration, and jerk),	Consolidated summary workbook (All_Subjects_Summary.xlsx).
+
 **2.	main.ipynb (ST-GCN and CTR-GCN Model):**
 Outputs: Cached extracted skeleton features (.pt), Trained ST-GCN and CTR-GCN models (if model saving is enabled), Classification reports,	Training history (training_history.csv), Results summary (results_summary.csv),	Confusion matrices,	Accuracy plots (Comparison_Accuracy.png), Confusion matrix plots (Comparison_Confusion.png),	Classification report text file (classification_reports.txt).
+
 **3.	Ablationstudy.ipynb (Ablation study):**
 Outputs: Performance comparison of different model configurations, Experimental summary and evaluation metrics.
+
 **4.	Cross Validation.ipynb (Cross-validation):**
 Outputs: •	Cross-validation accuracy and F1-score for each fold,	Average performance metrics,	Fold-wise evaluation summaries,	Performance comparison across folds.
 
