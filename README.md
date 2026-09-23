@@ -1,4 +1,3 @@
-<img width="468" height="53" alt="image" src="https://github.com/user-attachments/assets/3d27bd01-9ca9-4a0a-81ee-7374e0552002" />
 **Title**
 
 A Novel Graph Convolution Network-based framework for classification of performance in routine squat exercises to prevent training injuries
