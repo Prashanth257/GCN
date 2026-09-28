@@ -92,8 +92,14 @@ After execution, verify that the following files are generated:
 
 
 **Materials and Methods:
-Computing Infrastructure:**
-The experiments were carried out in a controlled computational setting to ensure consistency and reproducibility. The experiment was conducted on a machine running on Windows 11. The machine configuration had 128 GB of RAM and Intel Core Ultra 9 CPU, which provided sufficient computational power for building and testing the models.
+### Computational Environment
+
+| Component | Specification |
+|---|---|
+| Operating System | Windows 11 |
+| RAM | 128 GB |
+| Processor | Intel Core Ultra 9 |
+| Usage | Model development, training, evaluation, and analysis |
 
 
 **Dataset:**
