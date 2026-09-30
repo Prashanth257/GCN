@@ -1,6 +1,6 @@
 **Title**
 
-A Novel Graph Convolution Network-based framework for classification of performance in routine squat exercises to prevent training injuries
+Classification of routine squat exercises using the graph convolution network for human action recognition after extraction of kinematic parameters from the squat exercise videos.
 
 **Description**
 
@@ -90,16 +90,6 @@ After execution, verify that the following files are generated:
 •	Confusion matrix plots (Comparison_Confusion.png). 
 •	Console output showing training progress, classification accuracy, weighted F1-score, and evaluation metrics for both ST-GCN and CTR-GCN models.
 
-
-**Materials and Methods:
-### Computational Environment
-
-| Component | Specification |
-|---|---|
-| Operating System | Windows 11 |
-| RAM | 128 GB |
-| Processor | Intel Core Ultra 9 |
-| Usage | Model development, training, evaluation, and analysis |
 
 
 **Dataset:**
